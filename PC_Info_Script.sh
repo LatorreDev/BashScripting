@@ -1,7 +1,5 @@
 #!/bin/bash
 echo "Script for computer info - Script para info de la computadora "
-echo Sarita
-echo francesca
 echo " "
 echo "Script made by David Latorre - Script hecho por David Latorre"
 echo "you can found source code at - Puede encontrar el código fuente en"
