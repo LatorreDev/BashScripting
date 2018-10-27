@@ -1,5 +1,16 @@
 #! /bin/bash
 # utf-8
+
+default="Bogota"
+
 echo "Weather in your terminal"
-curl wttr.in/Bogota
-echo "To customize your city put "curl wttr.in/yourcity" "
+
+if [ ! -z $1 ] 
+then 
+    curl wttr.in/$1
+else
+    curl wttr.in/$default
+fi
+
+echo "Usage: weather-terminal.sh [city]"
+echo "If no city is given the script defaults to $default"
