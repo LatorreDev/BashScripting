@@ -15,7 +15,11 @@ $ chmod +x script-name.sh
 **This script is designed for ArchLinux and derivated**
 
 * for *Ap_hotspot.sh* 
-install screen  'sudo pacman -S screen'  
-install create_ap 'sudo pacman -S create_ap'  
+install screen and create_ap  
+
+```bash
+$ sudo pacman -S screen create_ap  
+
+```
 
 
