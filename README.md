@@ -10,12 +10,12 @@ $ curl -L -O https://github.com/LatorreDev/BashScripting/script-name.sh
 $ chmod +x script-name.sh
 
 ```
-##Pre-requisites
+## Pre-requisites
 
 **This script is designed for ArchLinux and derivated**
 
-* for *Ap_hotspot.sh*
-install screen
-install create_ap
+* for *Ap_hotspot.sh* 
+install screen  'sudo pacman -S screen'  
+install create_ap 'sudo pacman -S create_ap'  
 
 
