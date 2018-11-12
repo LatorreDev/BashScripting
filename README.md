@@ -28,10 +28,11 @@ You need to install yaourt
 
 edit pacman configuration file
 
-*```bash
-$ sudo nano /etc/pacman.conf
+```bash
 
-```*
+$ sudo nano /etc/pacman.conf 
+
+```
 
 add the following repository at the bottom
 
