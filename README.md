@@ -22,4 +22,31 @@ $ sudo pacman -S screen create_ap
 
 ```
 
+* for autoupdateArch.sh
+
+You need to install yaourt
+
+edit pacman configuration file
+
+*```bash
+$ sudo nano /etc/pacman.conf
+
+```*
+
+add the following repository at the bottom
+
+```bash
+
+[archlinuxfr]
+SigLevel = Never
+Server = http=//repo.archlinux.fr/$arch
+
+```
+
+save and close file, now update the repository database and install yaourt
+
+```bash
+$ sudo pacman -Sy yaourt
+
+```
 
