@@ -30,3 +30,30 @@ asterics
 echo "script for Arch Linux Administration"
 echo "made by David Latorre"
 echo "latorredev.com"
+
+Mesg='Please enter your choice'
+echo ''
+options=('Update Arch'
+'Update Aur packages'
+'Exit'
+)
+
+select opt in "${options[@]}"
+do
+    case $opt in
+        'Update Arch')
+
+sudo pacman -Syu
+;;
+
+'Update Aur Packages')
+
+yaourt -Syua
+;;
+
+'Exit')
+    break
+    ;;
+*) echo invalid option;;
+    esac
+done
