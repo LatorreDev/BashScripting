@@ -34,7 +34,7 @@ echo "latorredev.com"
 Mesg='Please enter your choice'
 echo ''
 options=('Update Arch'
-'Update Aur packages'
+'Update Aur Packages'
 'Exit'
 )
 
