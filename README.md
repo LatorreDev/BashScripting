@@ -44,7 +44,8 @@ Server = http=//repo.archlinux.fr/$arch
 
 ```
 
-save and close file, now update the repository database and install yaourt
+Now clone yay source code from git and run the build, it may take a while ;)
+
 
 ```bash
 $ git clone https://aur.archlinux.org/yay.git
@@ -52,4 +53,4 @@ cd yay
 makepkg -si
 
 ```
-
+finally press y key to install yay
