@@ -48,7 +48,7 @@ sudo pacman -Syu
 
 'Update Aur Packages')
 
-yaourt -Syua
+yay -Syua
 ;;
 
 'Exit')
