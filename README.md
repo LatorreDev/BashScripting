@@ -22,9 +22,9 @@ $ sudo pacman -S screen create_ap
 
 ```
 
-* for autoupdateArch.sh
+* for ArchLinuxAdministration.sh
 
-You need to install yaourt
+You need to add aur repo and install yay
 
 edit pacman configuration file
 
@@ -47,7 +47,9 @@ Server = http=//repo.archlinux.fr/$arch
 save and close file, now update the repository database and install yaourt
 
 ```bash
-$ sudo pacman -Sy yaourt
+$ git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
 
 ```
 
