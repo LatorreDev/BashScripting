@@ -1,9 +1,19 @@
 #!/bin/bash
+
+#Function
+
+function salir()
+{
+ echo "*************************"
+ echo "* Para salir presione 8 *"
+ echo "*************************"
+}
+
 echo "Script for computer info - Script para info de la computadora "
 echo " "
 echo "Script made by David Latorre - Script hecho por David Latorre"
 echo "you can found source code at - Puede encontrar el código fuente en"
-echo "https://github.com/DavidLatorre1990/BashScripting/blob/master/PC_Info_Script.sh"
+echo "https://github.com/Latorredev/BashScripting/blob/master/PC_Info_Script.sh"
 echo "Licensed under GPL V 3.0, you can use, study, distributate and improve this script"
 echo " "
 echo "      .--."
@@ -19,6 +29,7 @@ options=("Kernel info - Información del kernel"
 "System Processes - Procesos del sistemas"
 "PCI devices info - Info para dispositivos PCI"
  "USB devices info - Info para dispositivos USB "
+ "Ram info - Ver info de la memoria ram"
  "Kernel Modules - Módulos del kernel"
  "Services - Servicios"
   "Quit - Salir")
@@ -27,39 +38,31 @@ do
     case $opt in
         "Kernel info - Información del kernel")
             uname -a
-            echo "*************************"
-            echo "* Para salir presione 7 *"
-            echo "*************************"
+            salir
             ;;
         "System Processes - Procesos del sistemas")
-          ps -A | less
-          echo "*************************"
-          echo "* Para salir presione 7 *"
-          echo "*************************"
-          ;;
+            ps -A | less
+            salir
+            ;;
         "PCI devices info - Info para dispositivos PCI")
             lspci
-            echo "*************************"
-            echo "* Para salir presione 7 *"
-            echo "*************************"
+            salir
             ;;
         "USB devices info - Info para dispositivos USB ")
             lsusb | less
-            echo "*************************"
-            echo "* Para salir presione 7 *"
-            echo "*************************"
+            salir
+            ;;
+        "Ram info - Ver info de la memoria ram")
+           sudo dmidecode -t memory | less
+           salir
             ;;
         "Kernel Modules - Módulos del kernel")
             lsmod | less
-            echo "*************************"
-            echo "* Para salir presione 7 *"
-            echo "*************************"
+            salir
             ;;
         "Services - Servicios")
             sudo systemctl status
-            echo "*************************"
-            echo "* Para salir presione 7 *"
-            echo "*************************"
+            salir
             ;;
 
         "Quit - Salir")
