@@ -5,7 +5,7 @@
 function salir()
 {
  echo "*************************"
- echo "* Para salir presione 8 *"
+ echo "* Para salir presione 9 *"
  echo "*************************"
 }
 
@@ -28,6 +28,7 @@ Mesg='Please enter your choice - Por favor escoja su opción: '
 options=("Kernel info - Información del kernel"
 "System Processes - Procesos del sistemas"
 "PCI devices info - Info para dispositivos PCI"
+"Network interface info - Info de las tarjetas de red"
  "USB devices info - Info para dispositivos USB "
  "Ram info - Ver info de la memoria ram"
  "Kernel Modules - Módulos del kernel"
@@ -46,6 +47,10 @@ do
             ;;
         "PCI devices info - Info para dispositivos PCI")
             lspci
+            salir
+            ;;
+        "Network interface info - Info de las tarjetas de red")
+            sudo lspci | grep net && sudo lspci | grep Net
             salir
             ;;
         "USB devices info - Info para dispositivos USB ")
