@@ -5,10 +5,6 @@ default="Bogota"
 
 echo "Weather in your terminal"
 
-
-if [ ! -z $1 ]
-then
-
 if [ ! -z $1 ] 
 then 
  master
@@ -19,7 +15,3 @@ fi
 
 echo "Usage: weather-terminal.sh [city]"
 echo "If no city is given the script defaults to $default"
-weather
-
-
- master
