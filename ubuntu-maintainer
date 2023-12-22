@@ -1,0 +1,14 @@
+#!/usr/bin/bash
+# Ubuntu cleaner
+
+echo "******************"
+echo "* Ubuntu Cleaner *"
+echo "******************"
+sudo apt update -y && \
+sudo apt upgrade -y && \
+sudo apt autoremove -y && \
+sudo apt autoclean -y
+
+echo "*****************************"
+echo "* Ubuntu Cleaned, have fun * "
+echo "*****************************"
