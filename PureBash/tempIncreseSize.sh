@@ -1,3 +1,5 @@
+#!/bin/ env bash
+# Script to increase /tmp folder
 echo "********************************************************"
 echo "* Script para incrementar a 12 GB la capacidad de /tmp *"
 echo "********************************************************"

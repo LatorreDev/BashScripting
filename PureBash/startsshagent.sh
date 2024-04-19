@@ -1,5 +1,5 @@
-#! /bin/bash
-#Pause function
+#!/bin/env bash
+#Script to iniatilize ssh and add ssh key
 
 function pause()
 {
