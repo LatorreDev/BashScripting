@@ -1,8 +1,8 @@
 #!/bin/env bash
 # Base programs 
-sudo dnf install kitty tmux neovim curl git zsh neofetch -y
+sudo dnf install kitty tmux neovim curl git zsh neofetch btop shellcheck -y
 
-if ["$0" = "bash"]; then
+if [ "$0" = "bash" ]; then
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 fi
 echo "alias vim=nvim" >> ~/.zshrc && \
